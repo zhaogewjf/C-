@@ -1,0 +1,24 @@
+#define  _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+int main()
+{
+	int sum = 0;
+	int i,j;
+	int c = 1;
+	int n = 0;
+	printf("请输入前n项的阶乘和的n:");
+	scanf ("%d",&n);
+	for (i = 1;i <= n ;i++)
+	{
+		for (j=1;j < i+1;j++)
+		{
+			c = c * j;
+		}
+		sum = sum + c;
+		c=1;
+	}
+	printf("前n项的阶乘和sum = %d\n",sum);
+	return 0;
+}
+	
